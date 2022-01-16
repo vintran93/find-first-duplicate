@@ -1,5 +1,8 @@
+require 'set'
+
 def find_first_duplicate(arr)
-  # type your code in here
+  s = Set.new
+  arr.find { |e| !s.add?(e) }
 end
 
 if __FILE__ == $PROGRAM_NAME
